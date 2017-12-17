@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 2.8)
 project(cpp11_containers CXX)
 include_directories(containers)
 
@@ -15,6 +15,8 @@ if (CONTAINERS_BUILD_TESTS)
     find_package(Boost COMPONENTS unit_test_framework)
 
     if (Boost_FOUND)
+        enable_testing()
+
         add_executable(binary_tree_test tests/BinaryTreeTests.cpp)
         target_link_libraries(binary_tree_test ${Boost_LIBRARIES} trees)
         add_test(NAME binary_tree_test WORKING_DIRECTORY ${CMAKE_BINARY_DIR} COMMAND binary_tree_test)
