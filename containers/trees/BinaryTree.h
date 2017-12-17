@@ -7,8 +7,8 @@
  * @author Ben Caine
  */
 
-#ifndef TREESEARCH_BINARYTREE_H
-#define TREESEARCH_BINARYTREE_H
+#ifndef CPP11_CONTAINERS_BINARYTREE_H
+#define CPP11_CONTAINERS_BINARYTREE_H
 
 #include <memory>
 
@@ -161,4 +161,4 @@ namespace trees {
     }
 }
 
-#endif //TREESEARCH_BINARYTREE_H
+#endif //CPP11_CONTAINERS_BINARYTREE_H
